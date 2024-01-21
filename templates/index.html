@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManagerGPT - Votre assistant football</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <img src="{{ url_for('static', filename='img/logo_transparent_bg.png') }}" alt="Logo" class="chat-logo">
+
+    <div class="chat-container">
+        <div class="chat-header">
+            Odyssée de l'IA 🚀
+
+        </div>
+        
+        <div class="chat-content" id="chatContent">
+            <div id="mistralChat" class="chat-bot left-chat">
+                <h3>Mistral Chatbot</h3>
+                <!-- Les messages de Mistral s'afficheront ici -->
+            </div>
+            <div id="openaiChat" class="chat-bot right-chat">
+                <h3>OpenAI Chatbot</h3>
+                <!-- Les messages d'OpenAI s'afficheront ici -->
+            </div>
+            
+        
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Posez vos questions ...">
+            <button id="sendBtn">Envoyer</button>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
